@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    .header-container {
+        gap: 2em;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
+    /* header */
+    .header-img {
+        height: 6em;
+    }
+
+    .header-text {
+        color: var(--background);
+        font-size: 3em;
+    }
+
+
+    /* nav */
+    .nav-container {
+        display: flex;
+    }
+
+    .nav-container.open {
+        display: flex;
+    }
+
+    .home-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card-subheader button {
+        width: auto;
+    }
+
+    .course-work-card {
+        grid-column: span 2 / span 2;
+    }
+
+    .courses-card {
+        grid-column: span 3 / span 3;
+    }
+
+    .courses-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
