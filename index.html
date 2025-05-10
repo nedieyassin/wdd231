@@ -7,10 +7,13 @@
     <title>Nedie Yassin</title>
     <meta name="author" content="Nedie Yassin"/>
     <meta name="description" content="Nedie Yassin is a BYU Pathway student studying Software Development"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/courses.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -28,7 +31,8 @@
                 <path d="M4 18h16"/>
                 <path d="M4 6h16"/>
             </svg>
-            <svg id="nav-button-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <svg id="nav-button-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 6 6 18"/>
                 <path d="m6 6 12 12"/>
@@ -36,63 +40,69 @@
         </button>
     </div>
 </header>
-<nav>
-    <ul id="nav-container" class="container nav-container">
-        <li><a class="nav-item active" href="#">Home</a></li>
-        <li><a class="nav-item " href="#">Chamber</a></li>
-        <li><a class="nav-item " href="#">Final</a></li>
-        <li><a class="nav-item " href="#">Github Profile</a></li>
-        <li><a class="nav-item " href="#">LinkedIn</a></li>
-    </ul>
-</nav>
-<main>
-    <div class="container ">
-        <h1>Home</h1>
-        <div class="home-container">
-            <!--            -->
-            <div class="card course-work-card">
-                <div class="card-header">Course Work</div>
-                <div class="card-body">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+<section>
+    <nav>
+        <ul id="nav-container" class="container nav-container">
+            <li><a class="nav-item active" href="#">Home</a></li>
+            <li><a class="nav-item " href="#">Chamber</a></li>
+            <li><a class="nav-item " href="#">Final</a></li>
+            <li><a class="nav-item " href="#">Github Profile</a></li>
+            <li><a class="nav-item " href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+</section>
+<section>
+    <main>
+        <div class="container ">
+            <h1>Home</h1>
+            <div class="home-container">
+                <!--            -->
+                <div class="card course-work-card">
+                    <div class="card-header">Course Work</div>
+                    <div class="card-body">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!--            -->
-            <div class="card location-card">
-                <div class="card-header">Lilongwe, Malawi</div>
-                <div class="card-body">
-                    <figure>
-                        <img src="images/malawi.jpg" alt="Mulange Mountain">
-                        <figcaption>Mulange Mountain</figcaption>
-                    </figure>
+                <!--            -->
+                <div class="card location-card">
+                    <div class="card-header">Lilongwe, Malawi</div>
+                    <div class="card-body">
+                        <figure>
+                            <img src="images/malawi.jpg" alt="Mulange Mountain">
+                            <figcaption>Mulange Mountain</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-            <!--            -->
-            <div class="card courses-card">
-                <div class="card-header">Web and Computer Programming Certificate</div>
-                <div class="card-subheader">
-                    <button id="filter-all">All</button>
-                    <button id="filter-cse">CSE</button>
-                    <button id="filter-wdd">WDD</button>
-                </div>
-                <div class="card-body">
-                    <div class="courses-list">
+                <!--            -->
+                <div class="card courses-card">
+                    <div class="card-header">Web and Computer Programming Certificate</div>
+                    <div class="card-subheader">
+                        <button id="filter-all">All</button>
+                        <button id="filter-cse">CSE</button>
+                        <button id="filter-wdd">WDD</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="courses-list">
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <div class="container footer-container">
-        <p>&copy; <span id="currentYear"></span> <span>Yassin Nedie, Lilongwe, Malawi</span></p>
-        <p>Last Update: <span id="lastModified"></span></p>
-    </div>
-</footer>
+    </main>
+</section>
+<section>
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; <span id="currentYear"></span> <span>Yassin Nedie, Lilongwe, Malawi</span></p>
+            <p>Last Update: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</section>
 </body>
 </html>
