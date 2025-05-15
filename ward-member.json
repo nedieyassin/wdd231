@@ -1,0 +1,23 @@
+{
+  "family_name": "Nedies",
+  "move_in_date": "2025-01-20",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Austin Nedie",
+      "gender": "Male",
+      "birthdate": "1980-12-15"
+    },
+    {
+      "name": "Mary Nedie",
+      "gender": "Female",
+      "birthdate": "1981-10-05"
+    },
+    {
+      "name": "Yassin Nedie",
+      "gender": "Male",
+      "birthdate": "1999-12-09"
+    }
+  ]
+}
