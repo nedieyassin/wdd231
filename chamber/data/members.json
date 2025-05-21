@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tech Malawi Ltd",
+    "address": "123 Mpingwe Road, Blantyre",
+    "phone": "+265 999 123 456",
+    "website": "https://techmalawi.mw",
+    "icon": "tech-malawi.png",
+    "membershipLevel": 3,
+    "description": "Innovative tech solutions provider."
+  },
+  {
+    "name": "Chikondi Foods",
+    "address": "22 Likuni Street, Lilongwe",
+    "phone": "+265 888 456 789",
+    "website": "https://chikondifoods.mw",
+    "icon": "chikondi-foods.png",
+    "membershipLevel": 2,
+    "description": "Organic food processing company."
+  },
+  {
+    "name": "Blantyre Motors",
+    "address": "7 Independence Drive, Blantyre",
+    "phone": "+265 993 654 321",
+    "website": "https://blantyremotors.mw",
+    "icon": "blantyre-motors.png",
+    "membershipLevel": 1,
+    "description": "Authorized vehicle dealership and servicing."
+  },
+  {
+    "name": "LakeView Resorts",
+    "address": "Lake Shore Road, Mangochi",
+    "phone": "+265 991 789 012",
+    "website": "https://lakeviewresorts.mw",
+    "icon": "lakeview-resorts.png",
+    "membershipLevel": 3,
+    "description": "Luxury resort and conference center."
+  },
+  {
+    "name": "Kwacha Insurance",
+    "address": "Capital City Complex, Lilongwe",
+    "phone": "+265 887 321 654",
+    "website": "https://kwachainsurance.mw",
+    "icon": "kwacha-insurance.png",
+    "membershipLevel": 2,
+    "description": "Reliable insurance and risk management."
+  },
+  {
+    "name": "Malawi AgroTech",
+    "address": "Thondwe, Zomba",
+    "phone": "+265 998 654 987",
+    "website": "https://malawiagrotech.mw",
+    "icon": "malawi-agrotech.png",
+    "membershipLevel": 1,
+    "description": "Agricultural innovation and solutions."
+  },
+  {
+    "name": "SkyNet Broadband",
+    "address": "Ginnery Corner, Blantyre",
+    "phone": "+265 994 321 876",
+    "website": "https://skynetbroadband.mw",
+    "icon": "skynet-broadband.png",
+    "membershipLevel": 2,
+    "description": "Fast and affordable internet services."
+  }
+]

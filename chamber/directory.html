@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <title>Directory - Chamber of Commerce</title>
+    <meta name="author" content="Chamber of Commerce"/>
+    <meta name="description"
+          content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="/chamber/favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description"
+          content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community.">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chamber of Commerce Website">
+
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img width="26" height="26" src="/chamber/images/logo.png" alt="Chamber of Commerce Logo">
+            <span>Corset</span>
+        </div>
+        <button id="nav-button" aria-label="Open Menu">
+            <svg id="nav-button-open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h16"/>
+                <path d="M4 18h16"/>
+                <path d="M4 6h16"/>
+            </svg>
+            <svg id="nav-button-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18"/>
+                <path d="m6 6 12 12"/>
+            </svg>
+        </button>
+        <nav id="nav-container" class="nav-container">
+            <ul class="nav-container-list ">
+                <li><a class="nav-item active" href="#">Home</a></li>
+                <li><a class="nav-item " href="#">Directory</a></li>
+                <li><a class="nav-item " href="#">Join</a></li>
+                <li><a class="nav-item " href="#">Recover</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<section class="chamber-members">
+    <h1>Chamber Members</h1>
+    <div class="view-toggle">
+        <button id="gridBtn">Grid View</button>
+        <button id="listBtn">List View</button>
+    </div>
+    <div id="member-list" class="grid-view"></div>
+</section>
+<footer>
+    <div class="container footer-container">
+        <div>
+            <p><b>Corset Chamber of Commerce</b></p>
+            <p>Lilongwe, Malawi</p>
+            <p>Corset, Box 199</p>
+            <p>info@corset.com</p>
+            <p>+265 998 046 884</p>
+        </div>
+        <div class="social-icons">
+            <a href=""><img height="40px" src="/chamber/images/youtube.svg" alt="Youtube"></a>
+            <a href=""><img height="40px" src="/chamber/images/x.svg" alt="X"></a>
+            <a href=""><img height="40px" src="/chamber/images/facebook.svg" alt="Facebook"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Nedie Yassin</p>
+            <p>&copy;<span id="currentYear"></span> Corset Chamber of Commerce</p>
+            <p>Last Update: <span id="lastModified"></span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
