@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <title>Directory - Chamber of Commerce</title>
+    <title>Chamber of Commerce</title>
     <meta name="author" content="Chamber of Commerce"/>
     <meta name="description"
           content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community."/>
@@ -18,7 +18,7 @@
     <link rel="icon" type="image/x-icon" href="/chamber/favicon.ico">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:description"
@@ -55,8 +55,8 @@
         </button>
         <nav id="nav-container" class="nav-container">
             <div class="nav-container-list ">
-                <a class="nav-item " href="/chamber">Home</a>
-                <a class="nav-item active " href="/chamber/directory.html">Directory</a>
+                <a class="nav-item active" href="/chamber">Home</a>
+                <a class="nav-item " href="/chamber/directory.html">Directory</a>
                 <a class="nav-item " href="#">Join</a>
                 <a class="nav-item " href="#">Recover</a>
             </div>
@@ -65,14 +65,50 @@
     </div>
 </header>
 <main>
-    <section class="chamber-members container">
-        <h1>Chamber Members</h1>
-        <div class="view-toggle">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
-        </div>
-        <div id="member-list" class="grid-view"></div>
+    <section class="container hero-section">
+        <a href="" class="">Keynote Tickets</a>
     </section>
+    <section class="container">
+        <h1>Home</h1>
+        <div class="home-container">
+            <!--            -->
+            <div class="card events-card">
+                <div class="card-header">Events</div>
+                <div class="card-body">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!--            -->
+            <div class="card current-weather-card">
+                <div class="card-header">Current Weather</div>
+                <div class="card-body">
+                    <div id="current-weather">
+
+                    </div>
+                </div>
+            </div>
+            <!--            -->
+            <div class="card weather-forecast-card">
+                <div class="card-header">Weather Forecast</div>
+                <div class="card-body">
+                    <div id="forecast-weather">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div id="spotlights" class="spotlights-container">
+
+        </div>
+    </section>
+
 </main>
 <footer>
     <div class="container footer-container">

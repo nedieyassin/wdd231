@@ -30,6 +30,21 @@
         display: none;
     }
 
+
+    .home-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    .home-container .events-card {
+        grid-column: span 2 / span 2;
+    }
+
+
     .footer-container {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));

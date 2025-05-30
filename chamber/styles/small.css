@@ -63,6 +63,7 @@ header {
     left: 0;
     width: 100%;
     background-color: white;
+    z-index: 100;
 }
 
 
@@ -71,6 +72,24 @@ header {
     text-decoration: none;
     color: black;
 }
+
+
+.nav-container-list .active {
+    position: relative;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.nav-container-list .active::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #252525;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
 
 #nav-button {
     background-color: transparent;
@@ -105,6 +124,104 @@ header {
     border: none;
 }
 
+
+.hero-section {
+    left: 0;
+    top: 0;
+    /*width: 100%;*/
+    position: relative;
+    /*background: red;*/
+    background-image: url(../images/chamber-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+
+.hero-section a {
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+    background-color: #ffffff;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.hero-section a:hover {
+    background-color: #dcdcdc;
+}
+
+.home-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    overflow: clip;
+    border: 1px solid #e6e6e6;
+}
+
+.card-header {
+    padding: 0.5em;
+    background-color: var(--secondary-light);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.card-subheader {
+    padding: .6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+    border-bottom: 1px solid var(--secondary-light);
+}
+
+.card-subheader button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3em 1.6em;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 0.4em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card-subheader button:hover {
+    background-color: #434343;
+    transition: all .1s ease-in-out;
+}
+
+
+.card-body {
+    min-height: 4em;
+    padding: 1em;
+}
+
+
+#current-weather .current {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+#forecast-weather ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
 #member-list {
     padding: 1em;
@@ -152,6 +269,48 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+.spotlights-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+}
+
+.spotlight-card {
+    border: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.spotlight-card .header h3, p {
+    margin: 0;
+}
+
+.spotlight-card .header {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.6em;
+}
+
+.spotlight-card .body {
+    display: flex;
+    gap: 1em;
+    padding: 0.6em;
+
+}
+
+.spotlight-card .body img {
+    width: 4em;
+
+}
+
+.spotlight-card .body .detail-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
 }
 
 
