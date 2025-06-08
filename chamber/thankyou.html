@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <title>Directory - Corset Chamber of Commerce</title>
+    <title>Thank You - Corset Chamber of Commerce</title>
     <meta name="author" content="Chamber of Commerce"/>
     <meta name="description"
-          content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community."/>
+          content="Thank you for joining the Corset Chamber of Commerce!"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,12 +18,11 @@
     <link rel="icon" type="image/x-icon" href="/chamber/favicon.ico">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-
-    <meta property="og:title" content="Chamber of Commerce">
+    <script src="scripts/thankyou.js" defer></script>
+    <meta property="og:title" content="Thank You - Chamber of Commerce">
     <meta property="og:description"
-          content="A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community.">
-    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/chamber">
+          content="Thank you for joining the Corset Chamber of Commerce!">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:image"
           content="https://nedieyassin.github.io/wdd231/chamber/images/logo.png"/>
     <meta property="og:locale" content="en_US">
@@ -56,7 +55,7 @@
         <nav id="nav-container" class="nav-container">
             <div class="nav-container-list ">
                 <a class="nav-item " href="/chamber">Home</a>
-                <a class="nav-item active " href="/chamber/directory.html">Directory</a>
+                <a class="nav-item " href="/chamber/directory.html">Directory</a>
                 <a class="nav-item " href="/chamber/join.html">Join</a>
                 <a class="nav-item " href="#">Recover</a>
             </div>
@@ -64,14 +63,35 @@
 
     </div>
 </header>
-<main>
-    <section class="chamber-members container">
-        <h1>Chamber Members</h1>
-        <div class="view-toggle">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
+<main class="container thankyou-main-content">
+    <section class="card thankyou-card">
+        <h1>Thank You for Your Application!</h1>
+        <p>Your application to join the Corset Chamber of Commerce has been successfully submitted.</p>
+        <p>We appreciate your interest and will review your information shortly.</p>
+
+        <div id="submitted-info">
+            <h2>Submitted Information:</h2>
+            <dl>
+                <dt>First Name:</dt>
+                <dd id="display-fname"></dd>
+
+                <dt>Last Name:</dt>
+                <dd id="display-lname"></dd>
+
+                <dt>Email:</dt>
+                <dd id="display-email"></dd>
+
+                <dt>Mobile Phone Number:</dt>
+                <dd id="display-phone"></dd>
+
+                <dt>Business/Organization Name:</dt>
+                <dd id="display-bizName"></dd>
+
+                <dt>Application Timestamp:</dt>
+                <dd id="display-timestamp"></dd>
+            </dl>
         </div>
-        <div id="member-list" class="grid-view"></div>
+        <p class="return-link"><a href="index.html">Return to Home Page</a></p>
     </section>
 </main>
 <footer>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <title>Join - Corset Chamber of Commerce</title>
+    <meta name="author" content="Chamber of Commerce"/>
+    <meta name="description"
+          content="Join the Corset Chamber of Commerce to strengthen your business interests and connect with the community."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/x-icon" href="/chamber/favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <meta property="og:title" content="Join Chamber of Commerce">
+    <meta property="og:description"
+          content="Join the Corset Chamber of Commerce to strengthen your business interests and connect with the community.">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/chamber/join.html">
+    <meta property="og:image"
+          content="https://nedieyassin.github.io/wdd231/chamber/images/logo.png"/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chamber of Commerce Website">
+
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img width="26" height="26" src="images/logo.png" alt="Chamber of Commerce Logo">
+            <span>Corset</span>
+        </div>
+        <button id="nav-button" aria-label="Open Menu">
+            <svg id="nav-button-open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h16"/>
+                <path d="M4 18h16"/>
+                <path d="M4 6h16"/>
+            </svg>
+            <svg id="nav-button-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18"/>
+                <path d="m6 6 12 12"/>
+            </svg>
+        </button>
+        <nav id="nav-container" class="nav-container">
+            <div class="nav-container-list ">
+                <a class="nav-item " href="/chamber">Home</a>
+                <a class="nav-item " href="/chamber/directory.html">Directory</a>
+                <a class="nav-item active" href="/chamber/join.html">Join</a>
+                <a class="nav-item " href="#">Recover</a>
+            </div>
+        </nav>
+
+    </div>
+</header>
+<main class="container join-main-content">
+    <h1>Join the Corset Chamber of Commerce</h1>
+    <div class="join-grid">
+        <section class="join-form-section">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <label class="form-field">First Name *
+                        <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name"
+                               required>
+                    </label>
+
+                    <label class="form-field">Last Name*
+                        <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name"
+                               required>
+                    </label>
+
+                    <label class="form-field">Organization Title
+                        <input type="text" id="orgTitle" name="orgTitle"
+                               autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}"
+                               >
+                    </label>
+
+                    <label class="form-field">Email*
+                        <input type="email" id="email" name="email" title="Email" autocomplete="email" required
+                               placeholder="yourname@example.com">
+                    </label>
+
+                    <label class="form-field">Mobile Phone Number*
+                        <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel"
+                               required>
+                    </label>
+
+                    <label class="form-field">Business/Organization Name*
+                        <input type="text" id="bizName" name="bizName" title="Business/Organization Name"
+                               autocomplete="organization" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Details</legend>
+
+                    <div class="membership-selection">
+                        <p>Select Membership Level:</p>
+                        <label>
+                            <input type="radio" id="npMembership" name="membershipLevel" value="NP Membership" checked>
+                            NP Membership (No Fee)
+                        </label>
+                        <label>
+                            <input type="radio" id="bronzeMembership" name="membershipLevel" value="Bronze Membership">
+                            Bronze Membership
+                        </label>
+                        <label>
+                            <input type="radio" id="silverMembership" name="membershipLevel" value="Silver Membership">
+                            Silver Membership
+                        </label>
+                        <label>
+                            <input type="radio" id="goldMembership" name="membershipLevel" value="Gold Membership"> Gold
+                            Membership
+                        </label>
+                    </div>
+
+                    <label class="form-field">Business/Organization Description
+                        <textarea id="bizDescription" name="bizDescription" title="Business/Organization Description"
+                                  rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+
+                <input type="submit" value="Join the Chamber" class="submit-button">
+            </form>
+        </section>
+
+        <section class="membership-benefits-section">
+            <h2 class="benefits-heading">Explore Membership Benefits</h2>
+            <div class="membership-cards-grid">
+                <div class="membership-card card" id="np-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <button class="learn-more-btn" data-modal="np-modal">Learn More</button>
+                </div>
+                <div class="membership-card card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential benefits for growing businesses.</p>
+                    <button class="learn-more-btn" data-modal="bronze-modal">Learn More</button>
+                </div>
+                <div class="membership-card card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits for established businesses.</p>
+                    <button class="learn-more-btn" data-modal="silver-modal">Learn More</button>
+                </div>
+                <div class="membership-card card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits and maximum exposure.</p>
+                    <button class="learn-more-btn" data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<div id="np-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>NP Membership Benefits</h2>
+        <p>This membership is for non-profit organizations and comes with no fee.</p>
+        <ul>
+            <li>Access to basic networking events.</li>
+            <li>Inclusion in the Chamber's online directory.</li>
+            <li>Eligibility for Chamber newsletters.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="bronze-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Bronze Membership Benefits</h2>
+        <p>Cost: Mw100,000/month</p>
+        <ul>
+            <li>All NP Membership benefits.</li>
+            <li>Limited advertising opportunities.</li>
+            <li>Discounts on selected Chamber events.</li>
+            <li>Participation in member-exclusive workshops.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="silver-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Silver Membership Benefits</h2>
+        <p>Cost: Mwk200,000/month</p>
+        <ul>
+            <li>All Bronze Membership benefits.</li>
+            <li>Increased advertising exposure (e.g., rotating banner ads).</li>
+            <li>Significant discounts on all Chamber events and training.</li>
+            <li>Priority access to networking opportunities.</li>
+            <li>Featured once per quarter in Chamber social media.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="gold-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Gold Membership Benefits</h2>
+        <p>Cost: Mwk400,000/month</p>
+        <ul>
+            <li>All Silver Membership benefits.</li>
+            <li>Premium spotlight positions on the home page.</li>
+            <li>Exclusive invitations to VIP Chamber events.</li>
+            <li>Dedicated account manager for support.</li>
+            <li>Customized training programs for your staff.</li>
+            <li>Monthly featured article in the Chamber newsletter.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="container footer-container">
+        <div>
+            <p><b>Corset Chamber of Commerce</b></p>
+            <p>Lilongwe, Malawi</p>
+            <p>Corset, Box 199</p>
+            <p><a href="mailto:info@corset.com">info@corset.com</a></p>
+            <p><a href="tel:+265998046884">+265 998 046 884</a></p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img height="40" src="images/youtube.svg" alt="Youtube"></a>
+            <a href="#"><img height="40" src="images/x.svg" alt="X"></a>
+            <a href="#"><img height="40" src="images/facebook.svg" alt="Facebook"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Nedie Yassin</p>
+            <p>&copy;<span id="currentYear"></span> Corset Chamber of Commerce</p>
+            <p>Last Update: <span id="lastModified"></span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

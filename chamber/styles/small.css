@@ -329,3 +329,352 @@ header {
 .footer-container .social-icons img {
     height: 40px;
 }
+
+
+/* */
+
+.join-main-content h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: var(--primary);
+}
+
+.join-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.join-form-section fieldset {
+    border: 1px solid var(--primary-light);
+    border-radius: 8px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.join-form-section legend {
+    font-weight: bold;
+    color: var(--primary);
+    padding: 0 0.5em;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-field label {
+    margin-bottom: 0.3em;
+    font-weight: 500;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field textarea {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--secondary);
+    outline: none;
+    box-shadow: 0 0 5px rgba(188, 108, 37, 0.5);
+}
+
+.membership-selection p {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.membership-selection label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.membership-selection input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+.submit-button {
+    background-color: var(--primary);
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: fit-content;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-light);
+}
+
+
+/* Membership Benefits Section */
+.membership-benefits-section {
+    text-align: center;
+}
+
+.benefits-heading {
+    margin-bottom: 1.5em;
+    color: var(--primary);
+}
+
+.membership-cards-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+.membership-card {
+    padding: 1.5em;
+    background-color: #fefae0;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 0.8s forwards;
+}
+
+/* Delay animation for each card */
+#np-card {
+    animation-delay: 0.1s;
+}
+
+#bronze-card {
+    animation-delay: 0.2s;
+}
+
+#silver-card {
+    animation-delay: 0.3s;
+}
+
+#gold-card {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.membership-card h3 {
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.membership-card p {
+    margin-bottom: 1em;
+}
+
+.membership-card .learn-more-btn {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.membership-card .learn-more-btn:hover {
+    background-color: var(--secondary-light);
+    color: var(--primary);
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-content h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1em;
+}
+
+.modal-content ul li {
+    margin-bottom: 0.5em;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**/
+/**/
+/**/
+
+.thankyou-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.thankyou-card {
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.thankyou-card h1 {
+    color: var(--primary);
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
+}
+
+.thankyou-card p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+#submitted-info {
+    margin-top: 1.5em;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 1em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#submitted-info h2 {
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#submitted-info dl {
+
+    display: block;
+
+    gap: 0.5em 0;
+}
+
+#submitted-info dt {
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 0.2em;
+}
+
+#submitted-info dd {
+    margin-left: 0;
+    color: #333;
+    word-break: break-all;
+    margin-bottom: 1em;
+}
+
+.return-link {
+    margin-top: 1.5em;
+}
+
+.return-link a {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.return-link a:hover {
+    background-color: var(--secondary-light);
+    color: var(--primary);
+}
+

@@ -55,4 +55,72 @@
         padding-top: 1em;
     }
 
+
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3em;
+        align-items: start;
+    }
+
+    .membership-benefits-section {
+        text-align: left;
+    }
+
+    .membership-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1em;
+    }
+
+    .join-form-section {
+        padding-right: 2em;
+    }
+
+
+    /*    */
+    .membership-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /*    */
+    /*  */
+    .thankyou-card {
+        padding: 2em; /* Restore larger padding */
+    }
+
+    .thankyou-card h1 {
+        font-size: 2.2em; /* Restore larger heading size */
+    }
+
+    .thankyou-card p {
+        font-size: 1.1em; /* Restore larger paragraph size */
+    }
+
+    #submitted-info {
+        padding: 1.5em; /* Restore larger padding */
+    }
+
+    #submitted-info h2 {
+        font-size: 1.6em; /* Restore larger heading size */
+    }
+
+    #submitted-info dl {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Two columns for definition list */
+        gap: 0.8em 1em;
+    }
+
+    #submitted-info dt {
+        margin-bottom: 0; /* Remove extra margin when in grid */
+    }
+
+    #submitted-info dd {
+        margin-bottom: 0; /* Remove extra margin when in grid */
+    }
+
+    .return-link a {
+        font-size: 1em; /* Restore font size for button */
+    }
 }
+
+
