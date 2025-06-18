@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <title>Thank You - Corset Chamber of Commerce</title>
+    <title>Discover - Corset Chamber of Commerce</title>
     <meta name="author" content="Chamber of Commerce"/>
     <meta name="description"
-          content="Thank you for joining the Corset Chamber of Commerce!"/>
+          content="Discover local businesses and points of interest in Corset and the surrounding area."/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon"  href="/chamber/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/chamber/favicon.ico">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
-    <meta property="og:title" content="Thank You - Chamber of Commerce">
+    <script src="scripts/discover.js" defer></script>
+    <meta property="og:title" content="Discover Corset - Chamber of Commerce">
     <meta property="og:description"
-          content="Thank you for joining the Corset Chamber of Commerce!">
-    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/chamber/thankyou.html">
+          content="Discover local businesses and points of interest in Corset and the surrounding area.">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/chamber">
     <meta property="og:image"
           content="https://nedieyassin.github.io/wdd231/chamber/images/logo.png"/>
     <meta property="og:locale" content="en_US">
@@ -54,45 +54,24 @@
         </button>
         <nav id="nav-container" class="nav-container">
             <div class="nav-container-list ">
-                <a class="nav-item " href="/chamber">Home</a>
-                <a class="nav-item " href="/chamber/directory.html">Directory</a>
-                <a class="nav-item " href="/chamber/join.html">Join</a>
-                <a class="nav-item " href="#">Discover</a>
+                <a class="nav-item" href="/chamber">Home</a>
+                <a class="nav-item" href="/chamber/directory.html">Directory</a>
+                <a class="nav-item" href="/chamber/join.html">Join</a>
+                <a class="nav-item active" href="/chamber/discover.html">Discover</a>
             </div>
         </nav>
-
     </div>
 </header>
-<main class="container thankyou-main-content">
-    <section class="card thankyou-card">
-        <h1>Thank You for Your Application!</h1>
-        <p>Your application to join the Corset Chamber of Commerce has been successfully submitted.</p>
-        <p>We appreciate your interest and will review your information shortly.</p>
-
-        <div id="submitted-info">
-            <h2>Submitted Information:</h2>
-            <dl>
-                <dt>First Name:</dt>
-                <dd id="display-fname"></dd>
-
-                <dt>Last Name:</dt>
-                <dd id="display-lname"></dd>
-
-                <dt>Email:</dt>
-                <dd id="display-email"></dd>
-
-                <dt>Mobile Phone Number:</dt>
-                <dd id="display-phone"></dd>
-
-                <dt>Business/Organization Name:</dt>
-                <dd id="display-bizName"></dd>
-
-                <dt>Application Timestamp:</dt>
-                <dd id="display-timestamp"></dd>
-            </dl>
-        </div>
-        <p class="return-link"><a href="index.html">Return to Home Page</a></p>
-    </section>
+<main class="container discover-main">
+    <h1>Discover Corset</h1>
+    <div class="discover-grid-container">
+        <section class="sidebar-info card">
+            <h2>Welcome Back!</h2>
+            <p id="lastVisitMessage"></p>
+        </section>
+        <section class="main-content-gallery">
+        </section>
+    </div>
 </main>
 <footer>
     <div class="container footer-container">

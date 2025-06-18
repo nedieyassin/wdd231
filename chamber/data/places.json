@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Kamuzu Banda Mausoleum",
+    "address": "City Centre, Lilongwe",
+    "description": "A memorial to Malawi's first president, Dr. Hastings Kamuzu Banda. It features four main pillars that support the dome-shaped roof, representing the four cornerstones of the Malawi Congress Party. The structure and surrounding gardens offer a reflective experience.",
+    "image": "images/discover/mausoleum.jpg"
+  },
+  {
+    "name": "Lilongwe Wildlife Centre",
+    "address": "Forestry Rd, Lilongwe",
+    "description": "Malawi's only wildlife sanctuary, rescuing and rehabilitating wild animals. It offers guided tours, forest walks, and educational programs. Visitors can see a variety of animals including monkeys, antelopes, and various bird species.",
+    "image": "images/discover/wildlife-centre.jpg"
+  },
+  {
+    "name": "Kumbali Cultural Village",
+    "address": "Mchinji Rd, Lilongwe",
+    "description": "Experience traditional Malawian village life. Visitors can participate in cooking classes, drumming, dancing, and learn about local customs and crafts. It's a great way to immerse oneself in the rich cultural heritage of Malawi.",
+    "image": "images/discover/kumbali.jpg"
+  },
+  {
+    "name": "Old Town Mall",
+    "address": "Old Town, Lilongwe",
+    "description": "A bustling shopping complex in the heart of Lilongwe's Old Town. It hosts a variety of shops, restaurants, and local vendors, offering everything from souvenirs to modern necessities. It's a vibrant hub for both locals and tourists.",
+    "image": "images/discover/old-town-mall.jpg"
+  },
+  {
+    "name": "Chongoni Rock-Art Area",
+    "address": "Dedza District (near Lilongwe)",
+    "description": "A UNESCO World Heritage site known for its rich collection of ancient rock paintings, dating back thousands of years. It provides a fascinating glimpse into the artistic and spiritual lives of early human inhabitants of the region.",
+    "image": "images/discover/chongoni.jpg"
+  },
+  {
+    "name": "Lingadzi Namilomba Forest Reserve",
+    "address": "North Lilongwe",
+    "description": "A protected forest area offering peaceful trails for walking and birdwatching. It's a green lung in the city, providing a habitat for various bird species and small wildlife, perfect for a quiet escape from urban life.",
+    "image": "images/discover/forest-reserve.jpg"
+  },
+  {
+    "name": "Tobacco Auction Floors",
+    "address": "Kanengo, Lilongwe",
+    "description": "One of the largest tobacco markets in the world, offering a unique insight into Malawi's primary cash crop industry. During auction season (usually April to September), visitors can witness the vibrant trading process.",
+    "image": "images/discover/tobacco.jpg"
+  },
+  {
+    "name": "Parliament Building",
+    "address": "City Centre, Lilongwe",
+    "description": "The modern seat of Malawi's legislative body. Its architecture is impressive, and guided tours are sometimes available, offering a look into the country's governance. The surrounding area is well-maintained and provides a sense of civic pride.",
+    "image": "images/discover/parliament.jpg"
+  }
+]
