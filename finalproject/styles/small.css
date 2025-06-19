@@ -87,8 +87,11 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-footer a:hover {
+footer a {
     color: var(--white);
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
