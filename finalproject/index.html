@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Oasis - Home</title>
+    <meta name="description"
+          content="Welcome to Otaku Oasis, your community hub for anime and manga enthusiasts. Discover anime sessions, recommendations, and connect with fans.">
+    <meta name="author"
+          content="Yassin Nedie">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="icon" type="image/x-icon" href="/finalproject/favicon.ico">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+    <meta property="og:title" content="Otaku Oasis - Anime & Manga Club">
+    <meta property="og:description"
+          content="Join Otaku Oasis, your community hub for anime and manga enthusiasts. Discover trending anime, upcoming sessions, and connect with fellow fans.">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/finalproject">
+    <meta property="og:image" content="https://nedieyassin.github.io/wdd231/finalproject/images/logo.png"/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Otaku Oasis">
+
+
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Otaku Oasis Logo" width="50" height="50">
+                <span>Otaku Oasis</span>
+            </a>
+        </div>
+        <nav>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="anime.html">Anime</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero-section" id="hero-section">
+        <div class="hero-overlay">
+            <h2>Welcome to Otaku Oasis!</h2>
+            <p>Your community hub for everything anime and manga. Connect, discover, and share your passion.</p>
+            <a href="anime.html" class="cta-button">Explore Anime</a>
+        </div>
+    </section>
+
+    <section class="trending-anime-section card">
+        <h2>Trending Anime</h2>
+        <div class="anime-grid" id="trending-anime-grid">
+            <p>Loading trending anime...</p>
+        </div>
+        <div class="section-footer">
+            <a href="anime.html" class="view-all-link">View All Anime &rarr;</a>
+        </div>
+    </section>
+
+
+    <section class="recommendations-section card">
+        <h2>Latest Recommendations</h2>
+        <div class="recommendation-list" id="latest-recommendations-list">
+            <p>Loading latest recommendations...</p>
+        </div>
+        <div class="section-footer">
+            <a href="recommendations.html" class="view-all-link">View All Recommendations &rarr;</a>
+        </div>
+    </section>
+
+    <section class="call-to-action-section">
+        <h2>Join Our Community!</h2>
+        <p>Ready to connect with fellow anime and manga enthusiasts? Join our club and share your passion!</p>
+        <a href="recommendations.html" class="cta-button secondary-cta">Submit a Recommendation</a>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Otaku Oasis. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="website-plan.html">Website Plan</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

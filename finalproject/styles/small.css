@@ -1,0 +1,686 @@
+
+nav {
+    position: relative;
+}
+
+#nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+#nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+}
+
+#nav-menu.active {
+    display: flex;
+}
+
+#nav-menu li a {
+    display: block;
+    padding: 0.8em 1em;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#nav-menu li a:hover,
+#nav-menu li a.active {
+    background-color: var(--accent-color);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5em 1em;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+footer a:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details-button {
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.details-button:hover {
+    background-color: #1F2D3D;
+    color: var(--white);
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    padding: 1em;
+    max-width: 700px;
+}
+
+.hero-overlay h2 {
+    font-size: 3em;
+    color: var(--white);
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.sessions-section,
+.recommendations-section,
+.trending-anime-section {
+    padding: 2em;
+}
+
+.session-list,
+.recommendation-list,
+.anime-grid {
+    display: grid;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+.session-card,
+.recommendation-card,
+.anime-card {
+    background-color: var(--neutral-light);
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.anime-card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anime-card .anime-genres {
+    font-size: 0.85em;
+    color: #121111;
+    margin-bottom: 0.5em;
+}
+
+.anime-card .anime-score {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1em;
+}
+
+.recommendation-card .recommender {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recommendation-card .recommender span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.recommendation-card .review {
+    flex-grow: 1;
+    margin-top: 0.5em;
+}
+
+.section-footer {
+    text-align: right;
+    margin-top: 1.5em;
+}
+
+.view-all-link {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.call-to-action-section {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3em 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.call-to-action-section h2 {
+    color: var(--white);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.call-to-action-section p {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call-to-action-section .cta-button {
+    margin: 0.5em;
+}
+
+
+.anime-browse-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.search-controls {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.search-controls input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8em 1em;
+    border: 1px solid var(--neutral-light);
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-controls button {
+    width: 100%;
+    max-width: 200px;
+    border: none;
+}
+
+
+.anime-list-grid {
+    display: grid;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+.pagination-controls {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.pagination-controls button {
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    border: none;
+}
+
+
+.anime-detail-main {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.anime-detail-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.detail-header {
+    margin-bottom: 2em;
+}
+
+.detail-header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 0.2em;
+}
+
+.detail-header .anime-japanese-title {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.detail-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.detail-poster {
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detail-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-info {
+    flex-grow: 1;
+}
+
+.detail-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.detail-info p {
+    margin-bottom: 1em;
+}
+
+.detail-info strong {
+    color: var(--primary-color);
+}
+
+.detail-info .synopsis {
+    line-height: 1.8;
+}
+
+.detail-meta-item {
+    margin-bottom: 0.5em;
+}
+
+.detail-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.detail-meta-grid div {
+    background-color: var(--neutral-light);
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.detail-meta-grid h4 {
+    font-size: 1.1em;
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+}
+
+.detail-meta-grid p, .detail-meta-grid ul {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.detail-meta-grid ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.detail-meta-grid ul li {
+    background-color: #f0f0f0;
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+
+.characters-section {
+    margin-top: 3em;
+}
+
+.characters-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5em;
+    justify-items: center;
+}
+
+.character-card {
+    background-color: var(--neutral-light);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.8em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 120px;
+}
+
+.character-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    border: 2px solid var(--accent-color);
+}
+
+.character-card h4 {
+    font-size: 0.9em;
+    margin: 0;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.character-card .character-role {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.2em;
+}
+
+
+/**/
+/**/
+/**/
+/**/
+
+.recommendation-list-section {
+    padding: 2em;
+}
+
+.recommendation-grid {
+    display: grid;
+    gap: 1.5em;
+    margin-top: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+
+.recommendation-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    text-align: left;
+}
+
+.recommendation-card h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.recommendation-card .recommender {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.recommendation-card .review {
+    flex-grow: 1;
+    margin-top: 1em;
+    line-height: 1.5;
+}
+
+.recommendation-submit-section {
+    padding: 2em;
+}
+
+.recommendation-submit-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#recommendation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.3em;
+}
+
+#recommendation-form button[type="submit"] {
+    align-self: center;
+    width: auto;
+    padding: 0.8em 2em;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    padding: 0.8em;
+    border-radius: 5px;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+
+
+.thankyou-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.thankyou-card {
+    padding: 1.5em;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.thankyou-card h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
+}
+
+.thankyou-card p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+#submitted-info {
+    margin-top: 1.5em;
+    background-color: var(--neutral-light);
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 1em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#submitted-info h2 {
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#submitted-info dl {
+    display: block;
+    gap: 0.5em 0;
+}
+
+#submitted-info dt {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 0.2em;
+}
+
+#submitted-info dd {
+    margin-left: 0;
+    color: var(--text-color);
+    font-size: 1.2em;
+    word-break: break-all;
+    margin-bottom: 1em;
+}
+
+.return-link {
+    margin-top: 2em;
+}
+
+.return-link a.cta-button {
+    font-size: 0.9em;
+}

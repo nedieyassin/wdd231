@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Oasis - Anime List</title>
+    <meta name="description"
+          content="Browse and search for anime titles on Otaku Oasis. Explore various genres, scores, and find your next favorite anime.">
+    <meta name="author"
+          content="Yassin Nedie">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/finalproject/favicon.ico">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/anime.js" defer></script>
+    <meta property="og:title" content="Otaku Oasis - Anime List">
+    <meta property="og:description"
+          content="Browse and search for anime titles on Otaku Oasis. Discover trending and new releases.">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/finalproject/anime.html">
+    <meta property="og:image" content="https://nedieyassin.github.io/wdd231/finalproject/images/logo.png"/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Otaku Oasis">
+
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Otaku Oasis Logo" width="50" height="50">
+                <span>Otaku Oasis</span>
+            </a>
+        </div>
+        <nav>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="anime.html" class="active">Anime</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="anime-browse-section card">
+        <h2>Explore Anime</h2>
+        <div class="search-controls">
+            <input type="text" id="anime-search-input" placeholder="Search anime by title...">
+            <button id="anime-search-button" class="cta-button">Search</button>
+        </div>
+        <div class="anime-list-grid" id="anime-list-grid">
+            <p>Loading anime...</p>
+        </div>
+        <div class="pagination-controls">
+            <button id="load-more-button" class="cta-button secondary-cta">Load More</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Otaku Oasis. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="website-plan.html">Website Plan</a>
+    </div>
+</footer>
+
+</body>
+</html>

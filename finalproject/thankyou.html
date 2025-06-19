@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Oasis - Thank You!</title>
+    <meta name="description"
+          content="Thank you for your recommendation to Otaku Oasis!">
+    <meta name="author"
+          content="Yassin Nedie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/finalproject/favicon.ico">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <meta property="og:title" content="Otaku Oasis - Thank You!">
+    <meta property="og:description"
+          content="We appreciate your recommendation!">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/finalproject/thankyou.html">
+    <meta property="og:image" content="https://nedieyassin.github.io/wdd231/finalproject/images/logo.png"/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Otaku Oasis">
+
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Otaku Oasis Logo" width="50" height="50">
+                <span>Otaku Oasis</span>
+            </a>
+        </div>
+        <nav>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="anime.html">Anime</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container thankyou-main-content">
+    <section class="card thankyou-card">
+        <h1>Thank You for Your Recommendation!</h1>
+        <p>We appreciate you taking the time to share your favorite anime with the Otaku Oasis community.</p>
+        <p>Your recommendation helps us grow and discover new amazing titles!</p>
+
+        <div id="submitted-info">
+            <h2>Your Submitted Details:</h2>
+            <dl>
+                <dt>Anime Title:</dt>
+                <dd id="display-animeTitle"></dd>
+
+                <dt>MAL ID:</dt>
+                <dd id="display-malId"></dd>
+
+                <dt>Your Name:</dt>
+                <dd id="display-userName"></dd>
+
+                <dt>Your Review:</dt>
+                <dd id="display-reviewText"></dd>
+            </dl>
+        </div>
+        <p class="return-link"><a href="index.html" class="cta-button">Return to Home Page</a></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Otaku Oasis. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="website-plan.html">Website Plan</a>
+    </div>
+</footer>
+
+</body>
+</html>

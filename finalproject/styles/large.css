@@ -1,0 +1,193 @@
+@media (min-width: 601px) {
+    #nav-toggle {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+    }
+
+    #nav-menu li a {
+        padding: 0.5em 1em;
+        border-radius: 5px;
+    }
+
+    #nav-menu li a:hover,
+    #nav-menu li a.active {
+        background-color: var(--accent-color);
+    }
+
+    .hero-section {
+        height: 500px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 3.5em;
+    }
+
+    .session-list,
+    .recommendation-list,
+    .anime-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+
+    .call-to-action-section .cta-button {
+        margin: 0.5em 1em;
+    }
+
+
+    .detail-flex-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .detail-poster {
+        margin: 0;
+        margin-right: 2em;
+    }
+
+    .detail-info h3 {
+        text-align: left;
+    }
+
+    .detail-meta-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .characters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+
+    .recommendation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+}
+
+
+@media (min-width: 1025px) {
+
+    .header-content {
+        padding: 0 2em;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo a {
+        font-size: 1.8em;
+    }
+
+
+    .hero-section {
+        height: 600px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 4.5em;
+    }
+
+    .hero-overlay p {
+        font-size: 1.4em;
+    }
+
+    .session-list,
+    .recommendation-list,
+    .anime-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .session-card,
+    .recommendation-card,
+    .anime-card {
+        padding: 2em;
+    }
+
+
+    .search-controls {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search-controls input[type="text"] {
+        flex-grow: 1;
+        max-width: none;
+    }
+
+    .search-controls button {
+        width: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .anime-list-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+
+    .detail-poster {
+        width: 300px;
+        height: 420px;
+    }
+
+    .detail-meta-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .characters-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+
+    .recommendation-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+
+    .thankyou-card {
+        padding: 2em;
+    }
+
+    .thankyou-card h1 {
+        font-size: 2.2em;
+    }
+
+    .thankyou-card p {
+        font-size: 1.1em;
+    }
+
+    #submitted-info {
+        padding: 1.5em;
+    }
+
+    #submitted-info h2 {
+        font-size: 1.6em;
+    }
+
+    #submitted-info dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.8em 1em;
+    }
+
+    #submitted-info dt {
+        margin-bottom: 0;
+    }
+
+    #submitted-info dd {
+        margin-bottom: 0;
+    }
+
+    .return-link a.cta-button {
+        font-size: 1em;
+    }
+
+}

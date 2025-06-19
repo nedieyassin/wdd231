@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Oasis - Recommendations</title>
+    <meta name="description"
+          content="Share your favorite anime recommendations and explore what other Otaku Oasis members are watching.">
+    <meta name="author"
+          content="Yassin Nedie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/finalproject/favicon.ico">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/recommendations.js" defer></script>
+
+    <meta property="og:title" content="Otaku Oasis - Anime Recommendations">
+    <meta property="og:description"
+          content="Share your favorite anime and discover new ones recommended by the Otaku Oasis community.">
+    <meta property="og:url" content="https://nedieyassin.github.io/wdd231/finalproject/recommendations.html">
+    <meta property="og:image" content="https://nedieyassin.github.io/wdd231/finalproject/images/logo.png"/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Otaku Oasis">
+
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Otaku Oasis Logo" width="50" height="50">
+                <span>Otaku Oasis</span>
+            </a>
+        </div>
+        <nav>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="anime.html">Anime</a></li>
+                <li><a href="recommendations.html" class="active">Recommendations</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+
+    <section class="recommendation-submit-section card">
+        <h2>Submit Your Recommendation</h2>
+        <form id="recommendation-form" method="get" action="thankyou.html">
+            <div class="form-group">
+                <label for="animeTitle">Anime Title:</label>
+                <input type="text" id="animeTitle" name="anime_title" required placeholder="e.g., Attack on Titan">
+            </div>
+            <div class="form-group">
+                <label for="malId">MyAnimeList ID (Optional):</label>
+                <input type="number" id="malId" name="anime_id" placeholder="e.g., 16498 (for Attack on Titan)">
+            </div>
+            <div class="form-group">
+                <label for="userName">Your Nickname:</label>
+                <input type="text" id="userName" name="user_name" required placeholder="e.g., OtakuFan23">
+            </div>
+            <div class="form-group">
+                <label for="reviewText">Your Recommendation/Review:</label>
+                <textarea id="reviewText" name="review_text" rows="8" required
+                          placeholder="Tell us why you recommend this anime!"></textarea>
+            </div>
+            <button type="submit" class="cta-button">Submit Recommendation</button>
+            <p id="form-message" class="form-message"></p>
+        </form>
+    </section>
+
+    <section class="recommendation-list-section card">
+        <h2>Community Recommendations</h2>
+        <div class="recommendation-grid" id="recommendation-grid">
+            <p>Loading recommendations...</p>
+        </div>
+        <div class="section-footer">
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Otaku Oasis. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <a href="website-plan.html">Website Plan</a>
+    </div>
+</footer>
+
+</body>
+</html>
