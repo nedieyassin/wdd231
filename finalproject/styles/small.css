@@ -1,4 +1,10 @@
+/* ========== VARIABLES & REUSABLE ========== */
+:root {
+    --spacing: 1.5em;
+    --radius: 8px;
+}
 
+/* ========== NAVIGATION ========== */
 nav {
     position: relative;
 }
@@ -71,7 +77,7 @@ nav {
     background-color: var(--accent-color);
 }
 
-
+/* ========== FOOTER ========== */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -80,7 +86,8 @@ footer {
     font-size: 0.9em;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--white);
     text-decoration: underline;
 }
@@ -90,7 +97,15 @@ footer a:hover{
     margin: 0 auto;
 }
 
-.details-button {
+.pagination-controls {
+    margin-top: 1em;
+}
+
+/* ========== BUTTONS ========== */
+.details-button,
+.cta-button,
+.pagination-controls button,
+#recommendation-form button[type="submit"] {
     background-color: var(--text-color);
     color: var(--white);
     padding: 0.6em 1.2em;
@@ -102,18 +117,24 @@ footer a:hover{
     text-align: center;
 }
 
-.details-button:hover {
+.cta-button {
+    background-color: var(--accent-color);
+}
+
+.details-button:hover,
+.cta-button:hover {
     background-color: #1F2D3D;
     color: var(--white);
 }
 
+/* ========== HERO SECTION ========== */
 .hero-section {
     position: relative;
     width: 100%;
     height: 600px;
     overflow: hidden;
     margin-bottom: 2em;
-    border-radius: 8px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -139,42 +160,53 @@ footer a:hover{
     color: var(--white);
     padding: 1em;
     max-width: 700px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero-overlay h2 {
     font-size: 3em;
-    color: var(--white);
     margin-bottom: 0.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--white);
 }
 
 .hero-overlay p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* ========== SHARED SECTIONS & GRIDS ========== */
 .sessions-section,
 .recommendations-section,
-.trending-anime-section {
+.trending-anime-section,
+.recommendation-list-section,
+.recommendation-submit-section,
+.anime-browse-section,
+.anime-detail-section {
     padding: 2em;
 }
 
 .session-list,
 .recommendation-list,
-.anime-grid {
+.anime-grid,
+.anime-list-grid,
+.recommendation-grid,
+.characters-grid,
+.detail-meta-grid {
     display: grid;
     gap: 1.5em;
     margin-top: 1.5em;
     grid-template-columns: 1fr;
 }
 
+/* ========== CARD BLOCKS ========== */
 .session-card,
 .recommendation-card,
-.anime-card {
+.anime-card,
+.character-card {
     background-color: var(--neutral-light);
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--radius);
     padding: 1.5em;
     display: flex;
     flex-direction: column;
@@ -183,13 +215,17 @@ footer a:hover{
     text-align: center;
 }
 
+.anime-card img,
+.character-card img {
+    display: block;
+    object-fit: cover;
+}
+
 .anime-card img {
     max-width: 100%;
     height: 300px;
-    object-fit: cover;
     border-radius: 4px;
     margin-bottom: 0.8em;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -207,22 +243,61 @@ footer a:hover{
     margin-bottom: 1em;
 }
 
-.recommendation-card .recommender {
+.recommendation-card {
+    text-align: left;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.recommendation-card h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.recommendation-card .recommender,
+.recommender {
     font-style: italic;
     color: #666;
     font-size: 0.9em;
+    margin-top: 0.5em;
 }
 
-.recommendation-card .recommender span {
+.recommendation-card .recommender span,
+.recommender span {
     font-weight: bold;
     color: var(--accent-color);
 }
 
-.recommendation-card .review {
+.recommendation-card .review,
+.review {
     flex-grow: 1;
-    margin-top: 0.5em;
+    margin-top: 1em;
+    line-height: 1.5;
 }
 
+/* ========== CHARACTER CARD ========== */
+.character-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    border: 2px solid var(--accent-color);
+}
+
+.character-card h4 {
+    font-size: 0.9em;
+    margin: 0;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.character-card .character-role {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.2em;
+}
+
+/* ========== SECTION FOOTERS & LINKS ========== */
 .section-footer {
     text-align: right;
     margin-top: 1.5em;
@@ -233,20 +308,21 @@ footer a:hover{
     color: var(--accent-color);
 }
 
+/* ========== CALL TO ACTION ========== */
 .call-to-action-section {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 3em 1em;
-    border-radius: 8px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
 }
 
 .call-to-action-section h2 {
-    color: var(--white);
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    color: var(--white);
 }
 
 .call-to-action-section p {
@@ -261,12 +337,7 @@ footer a:hover{
     margin: 0.5em;
 }
 
-
-.anime-browse-section {
-    padding: 2em;
-    text-align: center;
-}
-
+/* ========== SEARCH ========== */
 .search-controls {
     margin-bottom: 2em;
     display: flex;
@@ -276,13 +347,13 @@ footer a:hover{
 }
 
 .search-controls input[type="text"] {
-    width: 100%;
     max-width: 400px;
     padding: 0.8em 1em;
     border: 1px solid var(--neutral-light);
     border-radius: 5px;
     font-size: 1em;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .search-controls button {
@@ -291,40 +362,7 @@ footer a:hover{
     border: none;
 }
 
-
-.anime-list-grid {
-    display: grid;
-    gap: 1.5em;
-    margin-top: 1.5em;
-    grid-template-columns: 1fr;
-}
-
-.pagination-controls {
-    margin-top: 2em;
-    text-align: center;
-}
-
-.pagination-controls button {
-    padding: 0.8em 2em;
-    font-size: 1.1em;
-    border: none;
-}
-
-
-.anime-detail-main {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.anime-detail-section {
-    padding: 2em;
-    text-align: center;
-}
-
-.detail-header {
-    margin-bottom: 2em;
-}
-
+/* ========== DETAIL PAGE ========== */
 .detail-header h1 {
     font-size: 2.5em;
     color: var(--primary-color);
@@ -351,7 +389,7 @@ footer a:hover{
     width: 250px;
     height: 350px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -359,21 +397,12 @@ footer a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-}
-
-.detail-info {
-    flex-grow: 1;
 }
 
 .detail-info h3 {
     font-size: 1.8em;
     margin-bottom: 1em;
     text-align: center;
-}
-
-.detail-info p {
-    margin-bottom: 1em;
 }
 
 .detail-info strong {
@@ -386,13 +415,6 @@ footer a:hover{
 
 .detail-meta-item {
     margin-bottom: 0.5em;
-}
-
-.detail-meta-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    margin-top: 1.5em;
 }
 
 .detail-meta-grid div {
@@ -408,7 +430,8 @@ footer a:hover{
     margin-bottom: 0.5em;
 }
 
-.detail-meta-grid p, .detail-meta-grid ul {
+.detail-meta-grid p,
+.detail-meta-grid ul {
     font-size: 0.9em;
     margin: 0;
     padding: 0;
@@ -429,108 +452,7 @@ footer a:hover{
     color: #555;
 }
 
-
-.characters-section {
-    margin-top: 3em;
-}
-
-.characters-section h2 {
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-.characters-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5em;
-    justify-items: center;
-}
-
-.character-card {
-    background-color: var(--neutral-light);
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 0.8em;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    width: 120px;
-}
-
-.character-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 0.5em;
-    border: 2px solid var(--accent-color);
-}
-
-.character-card h4 {
-    font-size: 0.9em;
-    margin: 0;
-    color: var(--primary-color);
-    line-height: 1.2;
-}
-
-.character-card .character-role {
-    font-size: 0.8em;
-    color: #888;
-    margin-top: 0.2em;
-}
-
-
-/**/
-/**/
-/**/
-/**/
-
-.recommendation-list-section {
-    padding: 2em;
-}
-
-.recommendation-grid {
-    display: grid;
-    gap: 1.5em;
-    margin-top: 1.5em;
-    grid-template-columns: 1fr;
-}
-
-
-.recommendation-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 200px;
-    text-align: left;
-}
-
-.recommendation-card h3 {
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
-}
-
-.recommendation-card .recommender {
-    font-style: italic;
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 0.5em;
-}
-
-.recommendation-card .review {
-    flex-grow: 1;
-    margin-top: 1em;
-    line-height: 1.5;
-}
-
-.recommendation-submit-section {
-    padding: 2em;
-}
-
-.recommendation-submit-section h2 {
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
+/* ========== FORM ========== */
 #recommendation-form {
     max-width: 600px;
     margin: 0 auto;
@@ -573,12 +495,6 @@ footer a:hover{
     margin-top: 0.3em;
 }
 
-#recommendation-form button[type="submit"] {
-    align-self: center;
-    width: auto;
-    padding: 0.8em 2em;
-}
-
 .form-message {
     text-align: center;
     margin-top: 1em;
@@ -600,14 +516,7 @@ footer a:hover{
     border: 1px solid #f5c6cb;
 }
 
-
-/**/
-/**/
-/**/
-/**/
-/**/
-
-
+/* ========== THANK YOU PAGE ========== */
 .thankyou-main-content {
     display: flex;
     justify-content: center;
@@ -620,7 +529,7 @@ footer a:hover{
 .thankyou-card {
     padding: 1.5em;
     background-color: var(--white);
-    border-radius: 8px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 700px;
     width: 100%;
@@ -656,11 +565,6 @@ footer a:hover{
     margin-bottom: 1em;
     text-align: center;
     font-size: 1.4em;
-}
-
-#submitted-info dl {
-    display: block;
-    gap: 0.5em 0;
 }
 
 #submitted-info dt {
