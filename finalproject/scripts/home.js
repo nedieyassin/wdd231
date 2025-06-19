@@ -1,5 +1,5 @@
 async function loadTrendingAnime() {
-    const trendingAnimeGrid = document.getElementById('trending-anime-grid');
+    const trendingAnimeGrid = document.querySelector('#trending-anime-grid');
     if (!trendingAnimeGrid) return;
 
     try {
@@ -21,7 +21,7 @@ async function loadTrendingAnime() {
         const anime = animes[Math.floor(Math.random() * animes.length)];
 
         if (anime) {
-            const heroSection = document.getElementById('hero-section');
+            const heroSection = document.querySelector('#hero-section');
             if (!heroSection) return;
 
             const image = document.createElement('img');

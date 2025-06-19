@@ -1,6 +1,6 @@
-const recommendationGrid = document.getElementById('recommendation-grid');
-const recommendationForm = document.getElementById('recommendation-form');
-const formMessage = document.getElementById('form-message');
+const recommendationGrid = document.querySelector('#recommendation-grid');
+const recommendationForm = document.querySelector('#recommendation-form');
+const formMessage = document.querySelector('#form-message');
 
 const RECOMMENDATIONS_URL = 'https://api.jikan.moe/v4/recommendations/anime';
 

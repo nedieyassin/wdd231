@@ -1,7 +1,7 @@
-const animeListGrid = document.getElementById('anime-list-grid');
-const searchInput = document.getElementById('anime-search-input');
-const searchButton = document.getElementById('anime-search-button');
-const loadMoreButton = document.getElementById('load-more-button');
+const animeListGrid = document.querySelector('#anime-list-grid');
+const searchInput = document.querySelector('#anime-search-input');
+const searchButton = document.querySelector('#anime-search-button');
+const loadMoreButton = document.querySelector('#load-more-button');
 
 let currentPage = 1;
 let currentSearchQuery = '';

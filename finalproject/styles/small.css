@@ -89,9 +89,12 @@ footer {
 
 footer a {
     color: var(--white);
+    padding: 0.5em 1em;
+    display: inline-block;
 }
 
 footer a:hover {
+    color: var(--white);
     text-decoration: underline;
 }
 

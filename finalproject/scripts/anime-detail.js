@@ -1,6 +1,6 @@
 async function fetchDetails() {
 
-    const animeDetailContent = document.getElementById('anime-detail-content');
+    const animeDetailContent = document.querySelector('#anime-detail-content');
     const BASE_URL = 'https://api.jikan.moe/v4';
 
     // Get mal_id from URL query parameter
